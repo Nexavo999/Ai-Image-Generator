@@ -1,0 +1,149 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0;
+    min-height: 100vh;
+    background-color: #121212;
+    color: #fff;
+}
+
+.container {
+    width: 90%;
+    max-width: 500px;
+    padding: 20px;
+    border-radius: 16px;
+    background-color: #1e1e1e;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+}
+
+h1 {
+    font-size: 2em;
+    text-align: center;
+    margin-bottom: 20px;
+    color: #fff;
+}
+
+/* Model Selector */
+.model-selector {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+label {
+    font-size: 16px;
+    color: #fff;
+}
+
+select {
+    padding: 10px;
+    font-size: 14px;
+    border-radius: 5px;
+    background-color: #333;
+    color: #fff;
+    border: 1px solid #444;
+}
+
+/* Input Area */
+.input-area {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+}
+
+textarea {
+    padding: 10px;
+    margin-bottom: 10px;
+    background-color: #333;
+    color: #fff;
+    border-radius: 5px;
+    border: 1px solid #444;
+    min-height: 100px;
+    resize: vertical;
+}
+
+/* Gradient Button */
+button {
+    background: linear-gradient(45deg, #20B2AA, #32CD32, #FFD700);
+    color: white;
+    padding: 15px 20px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 500;
+    transition: background-color 0.3s ease;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+button:disabled {
+    background: #aaa;
+    cursor: not-allowed;
+}
+
+button:hover {
+    background: linear-gradient(45deg, #17a59e, #28b23a, #f0b400);
+}
+
+button i {
+    margin-right: 8px;
+}
+
+/* Progress Bar */
+.progress-bar {
+    width: 0%;
+    height: 10px;
+    background-color: #32CD32;
+    display: none;
+    margin-bottom: 15px;
+    transition: width 2s ease;
+}
+
+/* Image Container and Result */
+.image-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+}
+
+#generatedImage {
+    max-width: 100%;
+    margin-top: 10px;
+    display: none;
+}
+
+.download-btn {
+    display: none;
+    margin-top: 10px;
+    cursor: pointer;
+    color: #20B2AA;
+    font-size: 18px;
+}
+
+#notification {
+    display: none;
+    color: #20B2AA;
+    margin-top: 20px;
+    text-align: center;
+}
+
+footer {
+    text-align: center;
+    margin-top: 30px;
+    color: #fff;
+}
+
+footer a {
+    color: #20B2AA;
+  }
