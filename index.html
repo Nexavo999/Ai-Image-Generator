@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Image Creator</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>AI Image Creator</h1>
+        
+        <!-- Model Selector Dropdown -->
+        <div class="model-selector">
+            <label for="modelSelect">Select Model:</label>
+            <select id="modelSelect">
+                <option value="fluxPro">Flux Pro AI</option>
+                <option value="sdxl">SDXL Image</option>
+                <option value="dalle">DALL-E</option>
+                <option value="flux">Flux Image</option>
+            </select>
+        </div>
+        
+        <!-- Text input for prompt -->
+        <div class="input-area">
+            <textarea id="prompt" placeholder="Enter a prompt, and AI will create images for you."></textarea>
+            <button id="generateBtn" onclick="generateImage()">
+                <span>Generate</span>
+            </button>
+        </div>
+
+        <!-- Image display and download -->
+        <div class="image-container" id="result">
+            <div class="progress-bar" id="progress"></div>
+            <img id="generatedImage" style="display: none;" alt="Generated Image">
+            <div class="download-btn" id="downloadBtn" onclick="downloadImage()">
+                <i class="material-icons">download</i>
+            </div>
+        </div>
+    </div>
+
+    <div id="notification"></div>
+
+    <footer>
+        <span>Created by</span>
+        <a href="https://t.me/NexavoInc" target="_blank">
+            <i class="material-icons" style="font-size: 18px;">telegram</i>
+            Nexavo
+        </a>
+        <span>&copy; 2025</span>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+  </html>
